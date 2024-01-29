@@ -13,6 +13,9 @@
    height: 15px;
    width: 15px;  
    background-color: #57ff6f;
+   color: white;
+   font-size: 10px;
+   text-align: center;
    border-radius: 50%;
    display: inline-block;
    position: absolute;
@@ -23,6 +26,9 @@
    height: 15px;
    width: 15px;  
    background-color: #57ff6f;
+   color: white;
+   font-size: 10px;
+   text-align: center;
    border-radius: 50%;
    display: inline-block;
    position: absolute;
@@ -33,26 +39,35 @@
    height: 15px;
    width: 15px;  
    background-color: #57ff6f;
+   color: white;
+   font-size: 10px;
+   text-align: center;
    border-radius: 50%;
    display: inline-block;
    position: absolute;
    top: 50%;
-   left: 40%;
+   left: 37%;
    }
    .container .s4 {
    height: 15px;
    width: 15px;  
    background-color: #57ff6f;
+   color: white;
+   font-size: 10px;
+   text-align: center;
    border-radius: 50%;
    display: inline-block;
    position: absolute;
    top: 50%;
-   left: 60%;
+   left: 63%;
    }
     .container .s5 {
    height: 15px;
    width: 15px;  
    background-color: #57ff6f;
+   color: white;
+   font-size: 10px;
+   text-align: center;
    border-radius: 50%;
    display: inline-block;
    position: absolute;
@@ -62,7 +77,10 @@
     .container .s6 {
    height: 15px;
    width: 15px;  
-   background-color: #57ff6f;
+   background-color: #57ff6f;   
+   color: white;
+   font-size: 10px;
+   text-align: center;
    border-radius: 50%;
    display: inline-block;
    position: absolute;
