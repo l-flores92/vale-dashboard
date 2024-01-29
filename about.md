@@ -10,9 +10,9 @@
    height: auto;
    }
   .container .s1 {
-   height: 15px;
-   width: 15px;  
-   background-color: #57ff6f;
+   height: 16px;
+   width: 16px;  
+   background-color: #7abf2e;
    color: white;
    font-size: 10px;
    text-align: center;
@@ -23,9 +23,9 @@
    left: 18%;
    }
     .container .s2 {
-   height: 15px;
-   width: 15px;  
-   background-color: #57ff6f;
+   height: 17px;
+   width: 17px;  
+   background-color: #7abf2e;
    color: white;
    font-size: 10px;
    text-align: center;
@@ -36,9 +36,9 @@
    left: 35%;
    }
     .container .s3 {
-   height: 15px;
-   width: 15px;  
-   background-color: #57ff6f;
+   height: 18px;
+   width: 18px;  
+   background-color: #7abf2e;
    color: white;
    font-size: 10px;
    text-align: center;
@@ -49,9 +49,9 @@
    left: 37%;
    }
    .container .s4 {
-   height: 15px;
-   width: 15px;  
-   background-color: #57ff6f;
+   height: 19px;
+   width: 19px;  
+   background-color: #7abf2e;
    color: white;
    font-size: 10px;
    text-align: center;
@@ -62,9 +62,9 @@
    left: 63%;
    }
     .container .s5 {
-   height: 15px;
-   width: 15px;  
-   background-color: #57ff6f;
+   height: 20px;
+   width: 20px;  
+   background-color: #7abf2e;
    color: white;
    font-size: 10px;
    text-align: center;
@@ -75,9 +75,9 @@
    left: 65%;
    }
     .container .s6 {
-   height: 15px;
-   width: 15px;  
-   background-color: #57ff6f;   
+   height: 21px;
+   width: 21px;  
+   background-color: #7abf2e;   
    color: white;
    font-size: 10px;
    text-align: center;
