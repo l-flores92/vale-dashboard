@@ -16,13 +16,12 @@
    border-radius: 50%;
    display: inline-block;
    position: absolute;
-   top: 50%;
-   left: 50%;
+   top: 15%;
+   left: 25%;
    }
  </style>
  </head>
  <body>
-   dashboard
   <div class="container">
    <img src="docs/assets/frame_3r.png" alt="frame" />
    <span class="dot"></span>
