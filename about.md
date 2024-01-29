@@ -19,7 +19,7 @@
    top: 17%;
    left: 18%;
    }
-    .container .s3 {
+    .container .s2 {
    height: 15px;
    width: 15px;  
    background-color: #57ff6f;
@@ -28,6 +28,36 @@
    position: absolute;
    top: 50%;
    left: 35%;
+   }
+    .container .s3 {
+   height: 15px;
+   width: 15px;  
+   background-color: #57ff6f;
+   border-radius: 50%;
+   display: inline-block;
+   position: absolute;
+   top: 50%;
+   left: 40%;
+   }
+   .container .s4 {
+   height: 15px;
+   width: 15px;  
+   background-color: #57ff6f;
+   border-radius: 50%;
+   display: inline-block;
+   position: absolute;
+   top: 50%;
+   left: 60%;
+   }
+    .container .s5 {
+   height: 15px;
+   width: 15px;  
+   background-color: #57ff6f;
+   border-radius: 50%;
+   display: inline-block;
+   position: absolute;
+   top: 50%;
+   left: 65%;
    }
     .container .s6 {
    height: 15px;
@@ -44,9 +74,12 @@
  <body>
   <div class="container">
    <img src="docs/assets/frame_3r.png" alt="frame" />
-   <span class="s1"></span>
-   <span class="s3"></span>
-   <span class="s6"></span>
+   <span class="s1">1</span>
+   <span class="s2">2</span>
+   <span class="s3">3</span>
+   <span class="s4">4</span>
+   <span class="s5">5</span>
+   <span class="s6">6</span>
   </div>
   
  </body>
