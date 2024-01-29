@@ -17,7 +17,7 @@
    display: inline-block;
    position: absolute;
    top: 16%;
-   left: 20%;
+   left: 18%;
    }
  </style>
  </head>
