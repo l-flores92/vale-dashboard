@@ -9,22 +9,33 @@
    width: 100%;
    height: auto;
    }
-  .container .dot {
+  .container .s1 {
    height: 15px;
    width: 15px;  
    background-color: #57ff6f;
    border-radius: 50%;
    display: inline-block;
    position: absolute;
-   top: 16%;
+   top: 17%;
    left: 18%;
+   }
+    .container .s6 {
+   height: 15px;
+   width: 15px;  
+   background-color: #57ff6f;
+   border-radius: 50%;
+   display: inline-block;
+   position: absolute;
+   top: 17%;
+   left: 82%;
    }
  </style>
  </head>
  <body>
   <div class="container">
    <img src="docs/assets/frame_3r.png" alt="frame" />
-   <span class="dot"></span>
+   <span class="s1"></span>
+   <span class="s6"></span>
   </div>
   
  </body>
