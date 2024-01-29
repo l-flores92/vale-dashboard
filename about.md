@@ -15,6 +15,9 @@
    background-color: #57ff6f;
    border-radius: 50%;
    display: inline-block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
    }
  </style>
  </head>
