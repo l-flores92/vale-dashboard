@@ -16,8 +16,8 @@
    border-radius: 50%;
    display: inline-block;
    position: absolute;
-   top: 15%;
-   left: 25%;
+   top: 16%;
+   left: 20%;
    }
  </style>
  </head>
