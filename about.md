@@ -27,7 +27,7 @@
    display: inline-block;
    position: absolute;
    top: 50%;
-   left: 25%;
+   left: 35%;
    }
     .container .s6 {
    height: 15px;
