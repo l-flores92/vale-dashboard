@@ -99,6 +99,6 @@
    <span class="s5">5</span>
    <span class="s6">6</span>
   </div>
-  
+  <img src="images/Sensor v3.png" alt="Sensor"/>
  </body>
 </html>
