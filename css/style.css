@@ -25,14 +25,14 @@ body {
 
 /* Rules for <h1>, <h2> elements */
 h1{
-    font-family: FraktionSans-Regular, 'Arial Narrow';
+    font-family: FraktionSans-Regular, Arial, 'Arial Narrow';
 }
 h2 {
-    font-family: FraktionSans-Regular, 'Arial Narrow';
+    font-family: FraktionSans-Regular, Arial, 'Arial Narrow';
     margin-left: 10px;
 }
 h3 {
-    font-family: Campton;
+    font-family: Campton, Arial;
     color:white;
     padding-left: 18px;
 }
