@@ -1,0 +1,165 @@
+﻿/* Global variables */
+:root {
+    --prok-yellow: #FFCB04;
+    --prok-grey: #878787;
+    --prok-black: #232328;
+    --prok-white: #f7f5f2;
+    --sidenav-width: 220px;
+    --sidenav-reset:0px;
+    --topbar-1-height: 20px;
+    --topbar-2-height: 73px;
+    --transition-time: 0.6s;
+}
+
+/* Padding/border are included in the height/weight of every element */
+* {
+    box-sizing: border-box;
+}
+
+/* Rules for <body> element */
+body {
+    margin: 0;
+    font-family: Campton, Arial; 
+    background-color: var(--prok-white);
+}
+
+/* Rules for <h1>, <h2> elements */
+h1{
+    font-family: FraktionSans-Regular, 'Arial Narrow';
+}
+h2 {
+    font-family: FraktionSans-Regular, 'Arial Narrow';
+    margin-left: 10px;
+}
+h3 {
+    font-family: Campton;
+    color:white;
+    padding-left: 18px;
+}
+
+/* Side Navigation bar rules */
+.sidenav {
+    height: 100%;
+    width: var(--sidenav-width);
+    position: fixed;
+    z-index: 1;
+    top: calc(var(--topbar-1-height) + var(--topbar-2-height));
+    left: 0;
+    background-color: var(--prok-black);
+    overflow-x: hidden;
+    transition: var(--transition-time);
+    display: block;
+}
+    /* sidenav link (<a> element) rules */
+    .sidenav a {
+        color: white;
+        padding: 18px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .sidenav a:hover {
+            background-color: var(--prok-white);
+            color: black;
+        }
+/* Sidenav close button */
+
+/* Top bar #1 rules */
+.topbar-1 {
+    background-color: var(--prok-yellow);
+    overflow: hidden;
+    height: var(--topbar-1-height);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Top bar #2 rules */
+.topbar-2 {
+    background-color: var(--prok-black);
+    overflow: hidden;
+    height: var(--topbar-2-height);
+    position: fixed;
+    top: var(--topbar-1-height);
+    width: var(--sidenav-width);
+    transition: var(--transition-time);
+}
+    .topbar-2 img {
+        width: 165px;
+        display: block;
+        margin: auto;
+        padding: 15px 0px; /*(top/bot)px (left/right)px*/
+    }
+
+    .topbar-2 .menu {
+        position: absolute;
+        left: -60px;
+        width: 43px;
+        padding: 15px 0px;
+        transition: var(--transition-time);
+    }
+
+/* Content style rules */
+.content {
+    background-color: var(--prok-white);
+    margin-top: 0px;
+    margin-left: var(--sidenav-width);
+    padding: 10px;
+}
+
+/* Footer style rules */
+.footer {
+    background-color: var(--prok-black);
+    padding: 10px;
+    position:absolute;
+    bottom:0;
+    width:100%
+}
+
+/* Buttons, general style rules*/
+.button {
+    background-color: var(--prok-grey);
+    border: none;
+    color: white;
+    padding: 50px;
+    width: 315px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.button-mobile {
+    width: 200px;
+    padding: 15px;
+    font-size: 15px;
+    /*class="button button-mobile"*/
+}
+
+/* Rules for mobile screens */
+@media screen and (max-width: 510px) {
+    .topbar-2 {
+        width: 100%;
+    }
+    .topbar-2 .menu{
+        left:8px;
+    }
+    .sidenav {
+        width: 0px;
+    }
+    .content {
+        margin-left: 0px;
+        margin-top: calc(var(--topbar-1-height) + var(--topbar-2-height));
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    .sidenav {
+        width: var(--sidenav-width) !important;
+        background-color: var(--prok-black) !important;
+    }
+}
