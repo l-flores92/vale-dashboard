@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="css/style.css" />
@@ -8,13 +8,17 @@
     <title>Devices</title>
 </head>
 <body>
+    <!-- Top Bars, Company Logo and Menu Btn -->
     <div class="topbar-1"></div>
     <div class="topbar-2">
         <a href="javascript:void(0)" onclick="clickMenu()">
             <img class="menu" src="docs/brand/prok_supporting_device_circle-white.png" />
         </a>
-        <img src="docs/brand/PROK_LOGO.png" />
+        <a href="index.html">
+            <img src="docs/brand/PROK_LOGO.png" />
+        </a>
     </div>
+    <!-- Navigation Menu -->
     <div id="sidenavigation" class="sidenav">
         <h3>General</h3>
         <a href="index.html">Home</a>
@@ -22,31 +26,13 @@
         <a href="devices.html">Devices</a>
         <a href="alarms.html">Alarms</a>
     </div>
+    <!-- Contents -->
     <div class="content">
         <h1>Devices</h1>
-        <div id="reader" width="600px" ></div>
+        <!-- Navigation Buttons, Add/View Devices -->
+        <a href="addDevices.html" class="button">Add</a>
+        <a href="" class="button">View</a>
     </div>
     <script src="js/main.js" defer></script>
-    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
-    <script>
-        function onScanSuccess(decodedText, decodedResult) {
-            // handle the scanned code as you like, for example:
-            //console.log(`Code matched = ${decodedText}`, decodedResult);
-            alert("Success: "+ decodedText + ", " + decodedResult);
-        }
-
-        function onScanFailure(error) {
-            // handle scan failure, usually better to ignore and keep scanning.
-            // for example:
-            //console.warn(`Code scan error = ${error}`);
-        }
-
-        let html5QrcodeScanner = new Html5QrcodeScanner(
-            "reader",
-            { fps: 10, qrbox: { width: 250, height: 250 }, showZoomSliderIfSupported:true },
-  /* verbose= */ false);
-        html5QrcodeScanner.render(onScanSuccess, onScanFailure);
-
-    </script>
 </body>
 </html>
