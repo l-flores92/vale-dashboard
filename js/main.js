@@ -1,11 +1,5 @@
 var menuClicked = 0;
 
-/**
- * Function gets called when user clicks on menu icon on webapp
- * Checks value of menuClicked, returns function to open/close sidePanel.
- * Value of menuClicked toggles between 0 and 1.
- * @returns {Function} openSidePanel or closeSidePanel
- */
 function clickMenu() {
     if (menuClicked == 0) {
         menuClicked += 1;
