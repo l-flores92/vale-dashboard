@@ -67,6 +67,15 @@ window.onclick = function (event) {
     }
 }
 
+window.ontouchstart = function (event) {
+    if (event.target == document.getElementById("modal-scanQR")) {
+        document.getElementById("modal-scanQR").style.display = "none";
+    }
+    else if (event.target == document.getElementById("modal-manualAdd")) {
+        document.getElementById("modal-manualAdd").style.display = "none";
+    }
+}
+
 function onScanSuccess(decodedText, decodedResult) {
     // handle the scanned code as you like, for example:
     console.log(`Code matched = ${decodedText}`, decodedResult);
