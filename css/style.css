@@ -86,8 +86,11 @@ h3 {
 }
     .topbar-2 img {
         width: 165px;
-        display: block;
-        margin: auto;
+        display: inline-block;
+       /* margin: auto;*/
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         padding: 15px 0px; /*(top/bot)px (left/right)px*/
     }
 
@@ -171,7 +174,7 @@ h3 {
         width: 100%;
     }
     .topbar-2 .menu{
-        left:8px;
+        left: 6%;
     }
     .sidenav {
         width: 0px;
