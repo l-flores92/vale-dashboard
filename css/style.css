@@ -106,7 +106,33 @@ h3 {
     margin-left: var(--sidenav-width);
     padding: 10px;
 }
+/* Modal container/background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20px; /* box location*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity*/
+}
 
+/* Content for modal (popup window) */
+.modal-content {
+    background-color: var(--prok-white);
+    margin: 10% auto;
+    padding: 35px;
+    border: 1px solid #888;
+    width: 75%;
+}
+
+.modal-content img{
+    width: 85%;
+    height: auto;
+}
 /* Footer style rules */
 .footer {
     background-color: var(--prok-black);
@@ -154,6 +180,10 @@ h3 {
         margin-left: 0px;
         margin-top: calc(var(--topbar-1-height) + var(--topbar-2-height));
         text-align: center;
+    }
+    .modal {
+        padding-top: 125px;
+        text-align: left;
     }
 }
 
