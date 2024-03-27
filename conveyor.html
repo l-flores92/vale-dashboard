@@ -7,98 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Conveyor</title>
     <style>
-        .container {
-            position: relative;
-            width: 100%;
+        /* Container for countries on client's page */
+        .countries {
+            background-color: var(--prok-lightergrey);
+            margin: 20px 10px;
+            padding: 1px 15px 15px 15px;
         }
-
-            .container img {
-                width: 100%;
-                height: auto;
+        
+        .countries-content {
+            background-color: var(--prok-white);
+            width: auto;
+            height: auto;
+            margin: 0px 10px 0px 10px;
+            transition: var(--transition-time);
+            display: block;
+            max-height: 0;
+            overflow: auto;
+            white-space: nowrap;
+        }
+                .button-collapsible {
+            background-color: var(--prok-grey);
+            border: solid 0.25px var(--prok-lightergrey);
+            color: white;
+            padding: 15px;
+            width: auto;
+            height: auto;
+            text-align: left;
+            text-decoration: none;
+            display: block;
+            font-size: 20px;
+            margin: 0px 10px 0px 10px;
+            cursor: pointer;
+        }
+        
+            .active, .button-collapsible:hover {
+                background-color: var(--prok-darkergrey);
             }
-
-            .container .s1 {
-                height: 16px;
-                width: 16px;
-                background-color: #7abf2e;
-                color: white;
-                font-size: 12px;
-                text-align: center;
-                border-radius: 50%;
-                display: inline-block;
-                position: absolute;
-                top: 17%;
-                left: 18%;
+        
+            .button-collapsible:after {
+                content: '\002B'; /* Unicode character for "plus" sign (+) */
+                float: right;
             }
-
-            .container .s2 {
-                height: 17px;
-                width: 17px;
-                background-color: #7abf2e;
-                color: white;
-                font-size: 10px;
-                text-align: center;
-                border-radius: 50%;
-                display: inline-block;
-                position: absolute;
-                top: 50%;
-                left: 35%;
+        
+            .active:after{
+                content: '\2212';
             }
-
-            .container .s3 {
-                height: 18px;
-                width: 18px;
-                background-color: #7abf2e;
-                color: white;
-                font-size: 10px;
-                text-align: center;
-                border-radius: 50%;
-                display: inline-block;
-                position: absolute;
-                top: 50%;
-                left: 37%;
-            }
-
-            .container .s4 {
-                height: 19px;
-                width: 19px;
-                background-color: #7abf2e;
-                color: white;
-                font-size: 10px;
-                text-align: center;
-                border-radius: 50%;
-                display: inline-block;
-                position: absolute;
-                top: 50%;
-                left: 63%;
-            }
-
-            .container .s5 {
-                height: 20px;
-                width: 20px;
-                background-color: #7abf2e;
-                color: white;
-                font-size: 10px;
-                text-align: center;
-                border-radius: 50%;
-                display: inline-block;
-                position: absolute;
-                top: 50%;
-                left: 65%;
-            }
-
-            .container .s6 {
-                height: 21px;
-                width: 21px;
-                background-color: #7abf2e;
-                color: white;
-                font-size: 10px;
-                text-align: center;
-                border-radius: 50%;
-                display: inline-block;
-                position: absolute;
-                top: 17%;
-                left: 82%;
+        
+        .button-sites {
+            background-color: var(--prok-black);
+            color: white;
+            padding-top: 44px;
+            width: 125px;
+            height: 125px;
+            text-align: center;
+            display: inline-block;
+            font-size: 30px;
+            text-decoration: none;
+            margin: 10px 10px 10px 10px;
+            cursor: pointer;
+        }
+        
+            .button-sites:hover {
+                opacity: 0.9;
             }
     </style>
 </head>
@@ -120,17 +90,40 @@
         <a href="alarms.html">Alarms</a>
     </div>
     <div class="content">
-        <h1>Conveyor</h1>
-        <div class="container">
-            <img src="docs/devices/3RCF_001.png" alt="frame" />
-            <span class="s1">1</span>
-            <span class="s2">2</span>
-            <span class="s3">3</span>
-            <span class="s4">4</span>
-            <span class="s5">5</span>
-            <span class="s6">6</span>
+        <h1>Vale</h1>
+        <div class="countries">
+            <h4>Brazil</h4>
+            <!-- Location #1 -->
+            <a href="javascript:void(0)" class="button-collapsible">Minas Gerais</a>
+            <div class="countries-content" id="minasgerais">
+                <a href="javascript:void(0)" class="button-sites">TFA</a>
+                <a href="javascript:void(0)" class="button-sites">MAC</a>
+                <a href="javascript:void(0)" class="button-sites">SEG</a>
+                <a href="javascript:void(0)" class="button-sites">TIM</a>
+                <a href="javascript:void(0)" class="button-sites">JAN</a>
+            </div>
+            <!-- Location #2 -->
+            <a href="javascript:void(0)" class="button-collapsible">Espirito Santo</a>
+            <div class="countries-content" id="espirito">
+                <a href="javascript:void(0)" class="button-sites">AAB</a>
+            </div>
         </div>
     </div>
     <script src="js/main.js" defer></script>
+        <script>
+        var collapsedSites = document.getElementsByClassName("button-collapsible");
+        var loopIdx = 0;
+        for (loopIdx = 0; collapsedSites.length; loopIdx++) {
+            collapsedSites[loopIdx].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = "200px";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
